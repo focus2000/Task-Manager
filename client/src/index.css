@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding:0
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-color:#2874f0;
+  --dark-color:#333;
+  --light-color:#f4f4f4;
+  --danger-color:#dc3545;
+  --success-color:#c0bfbd;
+  --xxx-color:#b5b8b7;
+}
+  /**************Navbar ******************/
+  .navbar, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    z-index: 1;
+    width: 100%;
+    color:var(--light-color);
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+  .logo p {
+    font-size: 0.6rem;
+    margin-top:0.5rem;
+    color:#ccc
+  }
+
+  .logo h1{
+    font-size: 1rem
+  }
+  .logo p i {
+      color:rgb(255, 57, 22)
+  }
+  .logo span {
+    color: rgb(255, 57, 22)
+  }
+  .navbar ul {
+    display: flex;
+   }
+   .navbar i, h1 {
+    padding: 0 1rem
+  }
+  li{
+    list-style: none;
+    padding: 0 1rem;
+    transition: all 0.3s ease 0s;
+  }
+  a{
+    text-decoration: none;
+    color:var(--light-color)
+  }
+  li i:hover ,a:hover{
+    opacity: 0.5;  
+    cursor: pointer;
+  }
+    .danger {
+      background-color: rgb(207, 58, 58);
+      width: 100%;
+      margin-bottom: 0.3rem;
+      margin-top:0rem;
+      text-transform: capitalize;
+      padding:0.5rem;
+      cursor:initial;
+      border:none;
+      color:#fff;
+      font:inherit;
+      border-radius:8px
+      
+      }
+    .danger span {
+      float: right;
+      cursor: pointer;
+    }
+ 
+  
+
+   .task{
+     color:white
+   }
+  @media(max-width:760px) {
+   
+
+    .navbar {
+        padding:1rem 0;
+        font-size:12px
+    }
+
+    .navbar h1 {
+        font-size:14px
+    }
+
+    
+  
+}
+
+
+@media(max-width:360px) {
+    .navbar {
+        padding:0.5rem 0;
+        font-size:1px
+    }
+
+    .navbar h1 {
+        font-size:10px
+    }
+
+   
+  
+}
+
+@media(max-width:375px) {
+    .navbar {
+        padding:0.5rem 0;
+        font-size:10px
+    }
+
+    .navbar h1 {
+        font-size:12px
+    }
+    
+
+   
+}
+
